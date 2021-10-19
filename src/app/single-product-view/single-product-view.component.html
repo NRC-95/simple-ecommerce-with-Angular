@@ -1,0 +1,14 @@
+<section class="container">
+    <div class="card">
+        <div class="card-image">
+            <img class="img-fluid" src={{product.picture}} alt={{product.name}} class="img-thumbnail">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text fs-3">{{ product.price + ' fcfa/&dollar;/&euro;' }}</p>
+            <p class="card-text"> {{ product.content }} </p>
+            <p class="card-text">Proprietes {{ product.properties }} </p>
+            <p class="card-text">Conseils d'utilisation> {{ product.usingAdvice }} </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+<div class="container mt-3">
+    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+      <app-single-product class="" *ngFor = "let product of products; let i = index"
+                      [name]="product.name"
+                      [picture]="product.picture"
+                      [price]="product.price"
+                      [properties]="product.properties"
+                      [usingAdvice]="product.usingAdvice"
+                      [status]="product.status"
+                      [content]="product.content"
+                      [id]="product.id"
+                      [index]="i" ></app-single-product>
+    </section>
+  </div>

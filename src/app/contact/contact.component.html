@@ -1,0 +1,32 @@
+<section class="container mt-3">
+    <h1>Contact</h1>
+    <form action="/test" method="post" class="row needs-validation" (ngSubmit)="onSubmit(f)" #f="ngForm" >
+        <div class="form-group mt-3 mb-3">
+            <label for="adresse" class="form-label">Adresse :</label>
+            <input type="text" name="adresse" id="adresse" class="form-control" placeholder="Entrez votre adresse..." ngModel required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+            <label for="tel" class="form-label">Tel :</label>
+            <input type="tel" name="tel" id="tel" class="form-control" placeholder="Numéro de téléphone..." ngModel required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="pseudo@example.com" ngModel required/>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message :</label>
+            <input type="textarea" name="message" id="message" class="form-control" placeholder="Entrez votre message..." ngModel required/>
+        </div>
+        <div>
+            <input type="submit" value="Envoyer" class="btn btn-success text-dark" [disabled]="f.invalid" />
+                &nbsp; &nbsp; &nbsp;
+            <input type="reset" class="btn btn-danger text-dark" value="Annuler" />
+        </div>
+    </form>
+</section>

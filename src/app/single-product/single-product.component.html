@@ -1,0 +1,39 @@
+<div class="col">
+    <div class="card">
+        <div class="d-sm-flex flex-sm-row-reverse bd-highlight">
+            <div class="flex-fill bd0-highlight" *ngIf="screenWidth >= 576">
+                <div class="card-header">
+                    <div class="row row-cols-2 row-cols-sm-1 gy-sm-5">
+                        <div class="col">
+                            <a [routerLink]="'/proprietes/#' + [id]" class="btn btn-primary">Propriétés</a>
+                        </div>
+                        <div class="col">
+                            <a [routerLink]="'/conseils_d_utilisation/#' + [id]" class="btn btn-primary">Conseils d'utilisation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-fill bd-highlight">
+                <a [routerLink]="[id]" ><img class="img-fluid" src={{picture}} alt={{name}} class="img-thumbnail" /> </a>
+            </div>
+        </div>
+        
+        <div class="card-body">
+            <h5 class="card-title"> {{ name }} </h5>
+            <p class="card-text"> {{ price + ' fcfa/&dollar;/&euro;/&#8987;' }} <small><em>out of stock</em></small> </p>
+            <p class="card-text"> {{ content.substr(0, 200) + ' ...' }} </p>
+        </div>
+
+        <div class="card-footer" *ngIf="screenWidth < 576">
+            <div class="row">
+                <div class="col">
+                    <a [routerLink]="'/proprietes/#' + [id]" class="btn btn-primary">Propriétés</a>
+                </div>
+                <div class="col">
+                    <a [routerLink]="'/conseils_d_utilisation/#' + [id]" class="btn btn-primary">Conseils d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

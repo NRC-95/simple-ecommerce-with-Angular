@@ -1,0 +1,11 @@
+<section class="container">
+    <h1>
+        Propriétés des produits
+    </h1>
+
+    <app-property *ngFor = "let product of products; let i = index"
+                    [name]="product.name"
+                    [property]="product.properties"
+                    [id]="product.id" ></app-property>
+
+</section>
