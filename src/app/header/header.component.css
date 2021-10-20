@@ -1,0 +1,15 @@
+a {
+    color: rgb(0, 0, 0) !important;
+}
+
+a:hover {
+    background-color: rgba(7, 141, 2, 0.63);
+}
+
+header {
+    background-color: rgb(7, 189, 7);
+}
+
+a:focus {
+    background-color: rgb(21, 252, 0);
+}

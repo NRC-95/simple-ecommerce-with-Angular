@@ -21,7 +21,8 @@
         </div>
         <div class="mb-3">
             <label for="message" class="form-label">Message :</label>
-            <input type="textarea" name="message" id="message" class="form-control" placeholder="Entrez votre message..." ngModel required/>
+            <textarea name="message" id="message" class="form-control" ngModel required>
+            </textarea>    
         </div>
         <div>
             <input type="submit" value="Envoyer" class="btn btn-success text-dark" [disabled]="f.invalid" />

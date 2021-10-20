@@ -5,10 +5,10 @@
                 <div class="card-header">
                     <div class="row row-cols-2 row-cols-sm-1 gy-sm-5">
                         <div class="col">
-                            <a [routerLink]="'/proprietes/#' + [id]" class="btn btn-primary">Propriétés</a>
+                            <a href="/proprietes/#{{id}}" target="_self" class="btn btn-primary">Propriétés</a>
                         </div>
                         <div class="col">
-                            <a [routerLink]="'/conseils_d_utilisation/#' + [id]" class="btn btn-primary">Conseils d'utilisation</a>
+                            <a href="/conseils_d_utilisation/#{{id}}" target="_self" class="btn btn-primary">Conseils d'utilisation</a>
                         </div>
                     </div>
                 </div>
@@ -27,10 +27,10 @@
         <div class="card-footer" *ngIf="screenWidth < 576">
             <div class="row">
                 <div class="col">
-                    <a [routerLink]="'/proprietes/#' + [id]" class="btn btn-primary">Propriétés</a>
+                    <a href="/proprietes/#{{id}}" target="_self" class="btn btn-primary">Propriétés</a>
                 </div>
                 <div class="col">
-                    <a [routerLink]="'/conseils_d_utilisation/#' + [id]" class="btn btn-primary">Conseils d'utilisation</a>
+                    <a href="/conseils_d_utilisation/#{{id}}" target="_self" class="btn btn-primary">Conseils d'utilisation</a>
                 </div>
             </div>
         </div>
